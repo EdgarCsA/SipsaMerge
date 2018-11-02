@@ -88,7 +88,7 @@ for mes2 in ListaMeses:
             wb = xlrd.open_workbook(mes2+"_"+dia+".xls")
             sh = wb.sheet_by_index(0)
             mes=mesANumero(mes2)
-            Fecha=dia+"/"+mes+"/2016"     
+            Fecha=dia+"/"+mes+"/"+AnodelDescarga     
             #for N in range(5,18):
             jo=sh.row_values(2)
             while '' in jo:
